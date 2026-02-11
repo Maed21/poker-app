@@ -1,0 +1,1028 @@
+{
+  "hands": {
+    "22": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "Mixed (86%)"
+    },
+    "33": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "Mixed (86%)"
+    },
+    "44": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "55": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "66": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "77": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "88": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "99": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "AA": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "AKs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "AQs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "AJs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "ATs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A8s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A7s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A6s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A5s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A4s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A3s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "A2s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "AKo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KK": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KQs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KJs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K8s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K7s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K6s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K5s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K4s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "AQo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KQo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "QQ": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "QJs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "QTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q8s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q7s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q6s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q5s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "Q4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "AJo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KJo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "QJo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "JJ": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "JTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "J9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "J8s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "J7s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "J6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "ATo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "KTo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "QTo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "JTo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "TT": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "T9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "T8s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "T7s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "Mixed (90%)"
+    },
+    "T6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A9o": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "K9o": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (5%)"
+    },
+    "Q9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J9o": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (6%)"
+    },
+    "T9o": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (6%)"
+    },
+    "98s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "97s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "96s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "95s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "94s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "93s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "92s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "98o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "87s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "Pure"
+    },
+    "86s": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (28%)"
+    },
+    "85s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "84s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "83s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "82s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "97o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "87o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "76s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "Mixed (53%)"
+    },
+    "75s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "74s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "73s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "72s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "96o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "86o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "76o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "65s": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (40%)"
+    },
+    "64s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "63s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "62s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "95o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "85o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "75o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "65o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "54s": {
+      "correct": [
+        "Fold",
+        "Raise"
+      ],
+      "logic": "Mixed (18%)"
+    },
+    "53s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "52s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "94o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "84o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "74o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "64o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "54o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "43s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "42s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "93o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "83o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "73o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "63o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "53o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "43o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "32s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "A2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "K2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "Q2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "J2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "T2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "92o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "82o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "72o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "62o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "52o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "42o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    },
+    "32o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "Pure"
+    }
+  }
+}

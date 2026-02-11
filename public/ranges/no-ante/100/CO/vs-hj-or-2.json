@@ -1,0 +1,1031 @@
+{
+  "hands": {
+    "22": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:3% C:3% A:0% F:94%"
+    },
+    "33": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:8% C:2% A:0% F:90%"
+    },
+    "44": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:7% C:2% A:0% F:91%"
+    },
+    "55": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:11% C:3% A:0% F:86%"
+    },
+    "66": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:28% C:3% A:0% F:69%"
+    },
+    "77": {
+      "correct": [
+        "Raise",
+        "Call"
+      ],
+      "logic": "R:80% C:13% A:0% F:7%"
+    },
+    "88": {
+      "correct": [
+        "Raise",
+        "Call"
+      ],
+      "logic": "R:84% C:16% A:0% F:0%"
+    },
+    "99": {
+      "correct": [
+        "Raise",
+        "Call"
+      ],
+      "logic": "R:81% C:19% A:0% F:0%"
+    },
+    "AA": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:100% C:0% A:0% F:0%"
+    },
+    "AKs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:100% C:0% A:0% F:0%"
+    },
+    "AQs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:96% C:4% A:0% F:0%"
+    },
+    "AJs": {
+      "correct": [
+        "Raise",
+        "Call"
+      ],
+      "logic": "R:87% C:13% A:0% F:0%"
+    },
+    "ATs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:91% C:9% A:0% F:0%"
+    },
+    "A9s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:96% C:4% A:0% F:0%"
+    },
+    "A8s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:5% C:2% A:0% F:93%"
+    },
+    "A7s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A5s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:94% C:6% A:0% F:0%"
+    },
+    "A4s": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:96% C:4% A:0% F:0%"
+    },
+    "A3s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:32% C:2% A:0% F:66%"
+    },
+    "A2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "AKo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:97% C:3% A:0% F:0%"
+    },
+    "KK": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:100% C:0% A:0% F:0%"
+    },
+    "KQs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:96% C:4% A:0% F:0%"
+    },
+    "KJs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:95% C:5% A:0% F:0%"
+    },
+    "KTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:95% C:5% A:0% F:0%"
+    },
+    "K9s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:60% C:3% A:0% F:37%"
+    },
+    "K8s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K7s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "AQo": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:94% C:6% A:0% F:0%"
+    },
+    "KQo": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:79% C:3% A:0% F:18%"
+    },
+    "QQ": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:98% C:2% A:0% F:0%"
+    },
+    "QJs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:95% C:5% A:0% F:0%"
+    },
+    "QTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:96% C:4% A:0% F:0%"
+    },
+    "Q9s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q8s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q7s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "AJo": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:67% C:0% A:0% F:33%"
+    },
+    "KJo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "QJo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "JJ": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:97% C:3% A:0% F:0%"
+    },
+    "JTs": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:92% C:8% A:0% F:0%"
+    },
+    "J9s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J8s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J7s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "ATo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "KTo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "QTo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "JTo": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "TT": {
+      "correct": [
+        "Raise"
+      ],
+      "logic": "R:93% C:7% A:0% F:0%"
+    },
+    "T9s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:11% C:2% A:0% F:87%"
+    },
+    "T8s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T7s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T6s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T5s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T4s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T3s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T2s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T9o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "98s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "97s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "96s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "95s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "94s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "93s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "92s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T8o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "98o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "87s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "86s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "85s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "84s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "83s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "82s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T7o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "97o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "87o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "76s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "75s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "74s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "73s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "72s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T6o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "96o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "86o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "76o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "65s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:25% C:0% A:0% F:75%"
+    },
+    "64s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "63s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "62s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T5o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "95o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "85o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "75o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "65o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "54s": {
+      "correct": [
+        "Raise",
+        "Fold"
+      ],
+      "logic": "R:11% C:2% A:0% F:87%"
+    },
+    "53s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "52s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T4o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "94o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "84o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "74o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "64o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "54o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "43s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "42s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T3o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "93o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "83o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "73o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "63o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "53o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "43o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "32s": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "A2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "K2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "Q2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "J2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "T2o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "92o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "82o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "72o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "62o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "52o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "42o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    },
+    "32o": {
+      "correct": [
+        "Fold"
+      ],
+      "logic": "R:0% C:0% A:0% F:100%"
+    }
+  }
+}
