@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f5;
+  --foreground: #0a0a0a;
+
+  /* Glassmorphism colors */
+  --glass-white: rgba(255, 255, 255, 0.7);
+  --glass-light: rgba(255, 255, 255, 0.5);
+  --glass-dark: rgba(0, 0, 0, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-soft: rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
@@ -20,7 +27,21 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg,
+      #ffeef8 0%,
+      /* 薄いピンク */
+      #fff4e6 20%,
+      /* 薄いオレンジ */
+      #fffacd 40%,
+      /* 薄い黄色 */
+      #e6fff9 60%,
+      /* 薄い緑 */
+      #e6f3ff 80%,
+      /* 薄い青 */
+      #f0e6ff 100%
+      /* 薄い紫 */
+    );
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   /* iOS Safari safe area support */
@@ -29,6 +50,32 @@ body {
   overscroll-behavior-y: contain;
   /* Smooth scrolling */
   -webkit-overflow-scrolling: touch;
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: var(--glass-white);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 var(--shadow-soft);
+}
+
+.glass-dark {
+  background: var(--glass-dark);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.glass-light {
+  background: var(--glass-light);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 16px 0 var(--shadow-soft);
 }
 
 /* Disable tap highlight on iOS */
@@ -38,7 +85,8 @@ body {
 }
 
 /* Improve button touch targets on mobile */
-button, a {
+button,
+a {
   touch-action: manipulation;
 }
 
@@ -51,4 +99,3 @@ html {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
