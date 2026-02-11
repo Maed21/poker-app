@@ -320,6 +320,20 @@ export default function UltimatePokerQuiz() {
         .grid-cols-13 { grid-template-columns: repeat(13, minmax(0, 1fr)); }
         @keyframes zoom-in { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
         .animate-in { animation: zoom-in 0.25s ease-out forwards; }
+
+        /* 文字のノイズ対策 */
+        .italic {
+          display: inline-block; /* 描画領域を固定 */
+          will-change: transform, opacity;
+          backface-visibility: hidden;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        /* 枠のノイズ対策（クラスを一つに絞るのがコツ） */
+        .glass-light {
+          overflow: hidden; 
+          transform: translateZ(0);
+        }
       `}</style>
       
       <div className="fixed bottom-2 right-2 opacity-20 text-[8px] font-sans pointer-events-none select-none">
