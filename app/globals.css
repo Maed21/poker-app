@@ -81,6 +81,19 @@ body {
   box-shadow: 0 4px 16px 0 var(--shadow-soft);
 }
 
+/* Disable tap highlight on iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Improve button touch targets and responsiveness on mobile */
+button,
+a {
+  touch-action: manipulation;
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Ensure interactive elements are clear */
 img {
   -webkit-touch-callout: none;

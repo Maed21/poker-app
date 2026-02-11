@@ -78,11 +78,13 @@ export default function UltimatePokerQuiz() {
   const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [showLogic, setShowLogic] = useState(false);
+  const [dataError, setDataError] = useState(false);
 
   const nextQuestion = useCallback(async () => {
     setLoading(true);
     setResult(null);
     setShowLogic(false);
+    setDataError(false);
     setCurrentHand("");
 
     const pos = selectedPos[Math.floor(Math.random() * selectedPos.length)];
@@ -138,6 +140,7 @@ export default function UltimatePokerQuiz() {
         setCurrentHand(handList[Math.floor(Math.random() * handList.length)]);
       } catch (e) {
         setData(null);
+        setDataError(true);
         setCurrentHand(all169Hands[Math.floor(Math.random() * all169Hands.length)]);
       } finally {
         setLoading(false);
@@ -156,7 +159,11 @@ export default function UltimatePokerQuiz() {
       const correct = isPushCorrect ? "All-in" : "Fold";
       setResult({ isCorrect: userAns === correct, correct: [correct], pNum, players });
     } else {
-      if (!data || !data[currentHand]) return;
+      if (!data || !data[currentHand]) {
+        // データがない場合は「間違い」として扱うか、何らかのフィードバック
+        setDataError(true);
+        return;
+      }
       const correctActions = data[currentHand].correct;
       setResult({ isCorrect: correctActions.includes(userAns), correct: correctActions });
     }
@@ -292,6 +299,11 @@ export default function UltimatePokerQuiz() {
             <div className="relative py-12 glass-light rounded-[40px] flex items-center justify-center min-h-[180px]">
               {loading ? (
                 <span className="text-xl font-black text-gray-400 animate-pulse uppercase">Searching...</span>
+              ) : dataError ? (
+                <div className="text-center">
+                  <p className="text-sm font-black text-red-500 uppercase italic">Data Missing</p>
+                  <p className="text-4xl font-black text-black leading-none mt-2">{currentHand}</p>
+                </div>
               ) : (
                 <span className={`font-black tracking-wide italic text-black leading-none ${currentHand.length > 3 ? 'text-5xl' : 'text-[110px]'}`}>
                   {currentHand}
