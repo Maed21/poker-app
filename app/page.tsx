@@ -35,6 +35,7 @@ for (let i = 0; i < 13; i++) {
 
 // 状況表示をフォーマットする関数
 const formatSituation = (situation: string): string => {
+  if (!situation) return "";
   if (situation === "open") return "OPEN";
 
   // "vs-utg-or-2-3" -> "VS UTG OpenRaise 2.3bb"
@@ -118,7 +119,9 @@ export default function UltimatePokerQuiz() {
         return false;
       });
 
-      const situation = validSituations[Math.floor(Math.random() * validSituations.length)] || validSituations[0];
+      const situation = validSituations.length > 0
+        ? validSituations[Math.floor(Math.random() * validSituations.length)]
+        : "vs-utg-or-2-3"; // Fallback to a known valid situation
       setCurrentTask({ stack, pos, ante, situation, mode: "range", committed });
 
       try {
@@ -131,6 +134,7 @@ export default function UltimatePokerQuiz() {
         let handList = (situation.includes("3b") || situation.includes("-or-"))
           ? Object.keys(json.hands).filter(h => json.hands[h].correct.some((a: string) => a !== "Fold"))
           : all169Hands;
+        if (handList.length === 0) handList = all169Hands;
         setCurrentHand(handList[Math.floor(Math.random() * handList.length)]);
       } catch (e) {
         setData(null);
@@ -383,6 +387,11 @@ export default function UltimatePokerQuiz() {
         @keyframes zoom-in { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
         .animate-in { animation: zoom-in 0.25s ease-out forwards; }
       `}</style>
+
+      {/* 最終更新日時 */}
+      <div className="fixed bottom-2 right-2 opacity-20 text-[8px] font-sans pointer-events-none select-none">
+        Last Update: 2026/02/11 21:21
+      </div>
     </div>
   );
 }
