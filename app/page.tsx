@@ -321,18 +321,16 @@ export default function UltimatePokerQuiz() {
         @keyframes zoom-in { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
         .animate-in { animation: zoom-in 0.25s ease-out forwards; }
 
-        /* 文字のノイズ対策 */
+        /* 修正箇所：.italic の部分をこれに差し替え */
         .italic {
-          display: inline-block; /* 描画領域を固定 */
-          will-change: transform, opacity;
-          backface-visibility: hidden;
-          -webkit-font-smoothing: antialiased;
-        }
-
-        /* 枠のノイズ対策（クラスを一つに絞るのがコツ） */
-        .glass-light {
-          overflow: hidden; 
-          transform: translateZ(0);
+        display: inline-block;
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        -webkit-font-smoothing: antialiased;
+  
+        /* ↓ これが重要！右側に少し余白を作って、斜体のハミ出しを守る */
+        padding-right: 0.1em; 
+        margin-right: -0.1em; /* 余白で作ったズレを外側でキャンセル */
         }
       `}</style>
       
