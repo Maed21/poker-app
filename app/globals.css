@@ -50,6 +50,9 @@ body {
   overscroll-behavior-y: contain;
   /* Smooth scrolling */
   -webkit-overflow-scrolling: touch;
+  /* Prevent text selection and long-press menus */
+  user-select: none;
+  -webkit-user-select: none;
   min-height: 100vh;
 }
 
@@ -78,16 +81,9 @@ body {
   box-shadow: 0 4px 16px 0 var(--shadow-soft);
 }
 
-/* Disable tap highlight on iOS */
-* {
-  -webkit-tap-highlight-color: transparent;
+/* Ensure interactive elements are clear */
+img {
   -webkit-touch-callout: none;
-}
-
-/* Improve button touch targets on mobile */
-button,
-a {
-  touch-action: manipulation;
 }
 
 /* Hide scrollbar but keep functionality */

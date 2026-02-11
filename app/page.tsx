@@ -105,7 +105,7 @@ export default function UltimatePokerQuiz() {
       setLoading(false);
     } else {
       const validSituations = SITUATIONS.filter(situ => {
-        if (situ === "open") return true;
+        if (situ === "open") return pos !== "BB";
         const targetPos = SITUATION_METADATA[situ];
         const myIdx = POSITIONS.indexOf(pos);
         const targetIdx = POSITIONS.indexOf(targetPos);
@@ -118,7 +118,7 @@ export default function UltimatePokerQuiz() {
         return false;
       });
 
-      const situation = validSituations[Math.floor(Math.random() * validSituations.length)] || "open";
+      const situation = validSituations[Math.floor(Math.random() * validSituations.length)] || validSituations[0];
       setCurrentTask({ stack, pos, ante, situation, mode: "range", committed });
 
       try {
@@ -188,7 +188,7 @@ export default function UltimatePokerQuiz() {
               <div
                 key={hand}
                 className={`
-                  aspect-square flex flex-col items-center justify-center font-bold leading-none
+                  aspect-square flex flex-col items-center justify-center font-bold leading-none transition-all active:scale-90
                   ${isPush ? "bg-black text-white" : "bg-white text-gray-600"}
                   ${isCurrent ? "ring-2 ring-orange-500 z-10 scale-110 shadow-lg relative" : ""}
                 `}
@@ -211,8 +211,8 @@ export default function UltimatePokerQuiz() {
 
         {/* モード切替 */}
         <div className="flex glass p-1.5 rounded-2xl max-w-[320px] mx-auto">
-          <button onClick={() => setMode("range")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all ${mode === "range" ? "bg-white text-black shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>RANGE</button>
-          <button onClick={() => setMode("push-fold")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all ${mode === "push-fold" ? "bg-black text-white shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>PUSH/FOLD</button>
+          <button onClick={() => setMode("range")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "range" ? "bg-white text-black shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>RANGE</button>
+          <button onClick={() => setMode("push-fold")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "push-fold" ? "bg-black text-white shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>PUSH/FOLD</button>
         </div>
 
         {/* セレクター */}
@@ -222,7 +222,7 @@ export default function UltimatePokerQuiz() {
               <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Stack (Range Only)</span>
               <div className="flex flex-wrap gap-1.5">
                 {RANGE_STACKS.map(s => (
-                  <button key={s} onClick={() => toggleSelection(selectedStacks, setSelectedStacks, s)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all ${selectedStacks.includes(s) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{s}BB</button>
+                  <button key={s} onClick={() => toggleSelection(selectedStacks, setSelectedStacks, s)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedStacks.includes(s) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{s}BB</button>
                 ))}
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function UltimatePokerQuiz() {
               <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Ante (Range Only)</span>
               <div className="flex flex-wrap gap-1.5">
                 {ANTES.map(a => (
-                  <button key={a} onClick={() => toggleSelection(selectedAntes, setSelectedAntes, a)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all ${selectedAntes.includes(a) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{a === "with-ante" ? "BB ANTE" : "NO ANTE"}</button>
+                  <button key={a} onClick={() => toggleSelection(selectedAntes, setSelectedAntes, a)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedAntes.includes(a) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{a === "with-ante" ? "BB ANTE" : "NO ANTE"}</button>
                 ))}
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function UltimatePokerQuiz() {
             <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Position</span>
             <div className="flex flex-wrap gap-1.5">
               {POSITIONS.map(p => (
-                <button key={p} onClick={() => toggleSelection(selectedPos, setSelectedPos, p)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all ${selectedPos.includes(p) ? (mode === "range" ? 'bg-white text-black' : 'bg-black text-white') + ' shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{p}</button>
+                <button key={p} onClick={() => toggleSelection(selectedPos, setSelectedPos, p)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedPos.includes(p) ? (mode === "range" ? 'bg-white text-black' : 'bg-black text-white') + ' shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{p}</button>
               ))}
             </div>
           </div>
