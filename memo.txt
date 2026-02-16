@@ -1,0 +1,19 @@
+no-ante 
+ 100bb 
+  bb:sb call or bet に対するレンジ無し
+  3b:SBからの3betに対するレンジのみ
+ 50bb
+  未対応
+ 30bb
+  未対応
+
+with-ante
+ 50bb
+  bb:sbのcallに対するレンジ無し
+  sb:raise→sb3betのレンジのみ（call→sbraiseのレンジ無し）
+ 30bb
+  open:全ポジション完了
+  bb:utgのorに対するレンジあり
+  btn:coのorに対するレンジあり
+ 20bb
+  未対応

@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { POWER_NUMBERS, REMAINING_PLAYERS } from '../constants/powerNumbers';
 
 // --- 各種定数 ---
-const RANGE_STACKS = ["100", "50", "30", "20"];
+const RANGE_STACKS = ["100", "50", "30"];
 const POSITIONS = ["UTG", "HJ", "CO", "BTN", "SB", "BB"];
 const ANTES = ["with-ante", "no-ante"];
 const ACTIONS = ["Fold", "Call", "Raise", "All-in"];
@@ -17,7 +17,7 @@ const SITUATION_METADATA: { [key: string]: string } = {
   "vs-btn-or-2-3": "BTN",
   "vs-sb-or-3-5": "SB",
   "vs-bb-3b-9-8": "BB",
-  "vs-bb-3b-9-0": "BB"
+  "vs-bb-3b-9": "BB"
 };
 
 const SITUATIONS = Object.keys(SITUATION_METADATA);
@@ -95,7 +95,7 @@ export default function UltimatePokerQuiz() {
 
         if (situ.includes("3b")) {
           if (situ === "vs-bb-3b-9-8" && pos !== "BB" && pos !== "SB") return true;
-          if (situ === "vs-bb-3b-9-0" && pos === "SB") return true;
+          if (situ === "vs-bb-3b-9" && pos === "SB") return true;
           return false;
         }
         if (situ.includes("-or-")) return oppIdx < myIdx;
@@ -104,7 +104,7 @@ export default function UltimatePokerQuiz() {
 
       const situation = validSituations.length > 0
         ? validSituations[Math.floor(Math.random() * validSituations.length)]
-        : "open"; 
+        : "open";
 
       setCurrentTask({ stack, pos, ante, situation, mode: "range", committed });
 
@@ -185,7 +185,7 @@ export default function UltimatePokerQuiz() {
   return (
     <div className="min-h-screen text-gray-900 p-3 font-sans pb-24">
       <div className="max-w-4xl mx-auto space-y-4">
-        
+
         {/* モード切替 */}
         <div className="flex glass p-1.5 rounded-2xl max-w-[320px] mx-auto">
           <button onClick={() => setMode("range")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "range" ? "bg-white text-black shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>RANGE</button>
@@ -333,7 +333,7 @@ export default function UltimatePokerQuiz() {
         margin-right: -0.1em; /* 余白で作ったズレを外側でキャンセル */
         }
       `}</style>
-      
+
       <div className="fixed bottom-2 right-2 opacity-20 text-[8px] font-sans pointer-events-none select-none">
         V1.0.5-FINAL-LOGIC
       </div>
