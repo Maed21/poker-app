@@ -17,7 +17,8 @@ const SITUATION_METADATA: { [key: string]: string } = {
   "vs-btn-or-2-3": "BTN",
   "vs-sb-or-3-5": "SB",
   "vs-bb-3b-9-8": "BB",
-  "vs-bb-3b-9": "BB"
+  "vs-bb-3b-9": "BB",
+  "vs-sb-call-1": "SB"
 };
 
 const SITUATIONS = Object.keys(SITUATION_METADATA);
@@ -41,7 +42,10 @@ const formatSituation = (situation: string): string => {
   if (parts[1]) formatted += parts[1].toUpperCase() + " ";
   if (parts[2] === "or") formatted += "OpenRaise ";
   else if (parts[2] === "3b") formatted += "3Bet ";
+  else if (parts[2] === "call") formatted += "Call ";
   if (parts.length >= 4) formatted += parts.slice(3).join('.') + "bb";
+  else if (parts.length === 3 && !isNaN(Number(parts[2]))) formatted += parts[2] + "bb";
+  else if (parts.length === 4 && !isNaN(Number(parts[3]))) formatted += parts[3] + "bb";
 
   return formatted;
 };
@@ -59,6 +63,7 @@ export default function UltimatePokerQuiz() {
   const [loading, setLoading] = useState(false);
   const [showLogic, setShowLogic] = useState(false);
   const [dataError, setDataError] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   const nextQuestion = useCallback(async () => {
     setLoading(true);
@@ -67,7 +72,9 @@ export default function UltimatePokerQuiz() {
     setDataError(false);
     setCurrentHand("");
 
-    const pos = selectedPos[Math.floor(Math.random() * selectedPos.length)];
+    const filteredPos = mode === "push-fold" ? selectedPos.filter(p => p !== "BB") : selectedPos;
+    const finalPosList = filteredPos.length > 0 ? filteredPos : ["SB"];
+    const pos = finalPosList[Math.floor(Math.random() * finalPosList.length)];
     const ante = selectedAntes[Math.floor(Math.random() * selectedAntes.length)];
     const stack = selectedStacks[Math.floor(Math.random() * selectedStacks.length)];
 
@@ -97,6 +104,9 @@ export default function UltimatePokerQuiz() {
           if (situ === "vs-bb-3b-9-8" && pos !== "BB" && pos !== "SB") return true;
           if (situ === "vs-bb-3b-9" && pos === "SB") return true;
           return false;
+        }
+        if (situ === "vs-sb-call-1") {
+          return pos === "BB";
         }
         if (situ.includes("-or-")) return oppIdx < myIdx;
         return false;
@@ -187,37 +197,59 @@ export default function UltimatePokerQuiz() {
       <div className="max-w-4xl mx-auto space-y-4">
 
         {/* モード切替 */}
-        <div className="flex glass p-1.5 rounded-2xl max-w-[320px] mx-auto">
-          <button onClick={() => setMode("range")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "range" ? "bg-white text-black shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>RANGE</button>
-          <button onClick={() => setMode("push-fold")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "push-fold" ? "bg-black text-white shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>PUSH/FOLD</button>
+        <div className="space-y-3">
+          <div className="flex glass p-1.5 rounded-2xl max-w-[320px] mx-auto">
+            <button onClick={() => setMode("range")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "range" ? "bg-white text-black shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>RANGE</button>
+            <button onClick={() => setMode("push-fold")} className={`flex-1 py-3 sm:py-2.5 rounded-xl text-xs sm:text-[10px] font-black tracking-widest transition-all active:scale-95 ${mode === "push-fold" ? "bg-black text-white shadow-lg" : "text-gray-500 hover:text-gray-900"}`}>PUSH/FOLD</button>
+          </div>
+
+          <button
+            onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+            className="flex items-center justify-center gap-2 mx-auto px-6 py-2 glass-light rounded-full text-[10px] font-black tracking-[0.2em] text-gray-600 hover:text-black transition-all active:scale-95"
+          >
+            {isSettingsOpen ? "CLOSE SETTINGS" : "OPEN SETTINGS"}
+            <span className={`transition-transform duration-300 ${isSettingsOpen ? 'rotate-180' : ''}`}>▼</span>
+          </button>
         </div>
 
         {/* セレクター */}
-        <div className="glass-light p-5 rounded-[32px] space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className={`space-y-2 transition-opacity ${mode === "push-fold" ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
-              <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Stack (Range Only)</span>
-              <div className="flex flex-wrap gap-1.5">
-                {RANGE_STACKS.map(s => (
-                  <button key={s} onClick={() => toggleSelection(selectedStacks, setSelectedStacks, s)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedStacks.includes(s) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{s}BB</button>
-                ))}
+        <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isSettingsOpen ? 'max-h-[500px] opacity-100 mb-4' : 'max-h-0 opacity-0 mb-0'}`}>
+          <div className="glass-light p-5 rounded-[32px] space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className={`space-y-2 transition-opacity ${mode === "push-fold" ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
+                <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Stack (Range Only)</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {RANGE_STACKS.map(s => (
+                    <button key={s} onClick={() => toggleSelection(selectedStacks, setSelectedStacks, s)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedStacks.includes(s) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{s}BB</button>
+                  ))}
+                </div>
+              </div>
+              <div className={`space-y-2 transition-opacity ${mode === "push-fold" ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
+                <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Ante (Range Only)</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {ANTES.map(a => (
+                    <button key={a} onClick={() => toggleSelection(selectedAntes, setSelectedAntes, a)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedAntes.includes(a) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{a === "with-ante" ? "BB ANTE" : "NO ANTE"}</button>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className={`space-y-2 transition-opacity ${mode === "push-fold" ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
-              <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Ante (Range Only)</span>
+            <div className="space-y-2">
+              <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Position</span>
               <div className="flex flex-wrap gap-1.5">
-                {ANTES.map(a => (
-                  <button key={a} onClick={() => toggleSelection(selectedAntes, setSelectedAntes, a)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedAntes.includes(a) ? 'bg-white text-black shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{a === "with-ante" ? "BB ANTE" : "NO ANTE"}</button>
-                ))}
+                {POSITIONS.map(p => {
+                  const isDisabled = mode === "push-fold" && p === "BB";
+                  return (
+                    <button
+                      key={p}
+                      disabled={isDisabled}
+                      onClick={() => toggleSelection(selectedPos, setSelectedPos, p)}
+                      className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${isDisabled ? 'opacity-20 cursor-not-allowed' : ''} ${selectedPos.includes(p) ? (mode === "range" ? 'bg-white text-black' : 'bg-black text-white') + ' shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}
+                    >
+                      {p}
+                    </button>
+                  );
+                })}
               </div>
-            </div>
-          </div>
-          <div className="space-y-2">
-            <span className="text-[9px] text-gray-600 font-black ml-2 uppercase italic">Position</span>
-            <div className="flex flex-wrap gap-1.5">
-              {POSITIONS.map(p => (
-                <button key={p} onClick={() => toggleSelection(selectedPos, setSelectedPos, p)} className={`px-4 py-2 sm:py-1.5 rounded-full text-xs sm:text-[10px] font-bold transition-all active:scale-95 ${selectedPos.includes(p) ? (mode === "range" ? 'bg-white text-black' : 'bg-black text-white') + ' shadow-md' : 'bg-white/30 text-gray-700 hover:bg-white/50'}`}>{p}</button>
-              ))}
             </div>
           </div>
         </div>
