@@ -4,24 +4,76 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { POWER_NUMBERS, REMAINING_PLAYERS } from '../constants/powerNumbers';
 
 // --- 各種定数 ---
-const RANGE_STACKS = ["100", "50", "30"];
+const RANGE_STACKS = ["100", "50", "30", "20"];
 const POSITIONS = ["UTG", "HJ", "CO", "BTN", "SB", "BB"];
 const ANTES = ["with-ante", "no-ante"];
 const ACTIONS = ["Fold", "Call", "Raise", "All-in"];
 
 const SITUATION_METADATA: { [key: string]: string } = {
   "open": "ANY",
-  "vs-utg-or-2-3": "UTG",
-  "vs-hj-or-2-3": "HJ",
-  "vs-co-or-2-3": "CO",
-  "vs-btn-or-2-3": "BTN",
-  "vs-sb-or-3-5": "SB",
-  "vs-bb-3b-9-8": "BB",
-  "vs-bb-3b-9": "BB",
-  "vs-sb-call-1": "SB"
+  "vs-utg-or": "UTG",
+  "vs-hj-or": "HJ",
+  "vs-co-or": "CO",
+  "vs-btn-or": "BTN",
+  "vs-sb-or": "SB",
+  "vs-bb-3b": "BB",
+  "vs-bb-or": "BB",
+  "vs-sb-call-1": "SB",
+  "vs-bb-allin-20": "BB"
 };
 
 const SITUATIONS = Object.keys(SITUATION_METADATA);
+
+// 状況を動的に解決する
+const resolveSituation = (baseSituation: string, stack: string, pos: string): string => {
+  if (baseSituation === "open" || baseSituation === "vs-sb-call-1" || baseSituation === "vs-bb-allin-20") {
+    return baseSituation;
+  }
+
+  if (baseSituation.endsWith("-or")) {
+    if (baseSituation === "vs-sb-or") {
+      return stack === "20" ? "vs-sb-or-3" : "vs-sb-or-3-5";
+    }
+    if (baseSituation === "vs-bb-or") {
+      return stack === "20" ? "vs-bb-or-3" : "vs-bb-or-3-5";
+    }
+
+    if (stack === "100") {
+      if (baseSituation === "vs-btn-or") return "vs-btn-or-2-5";
+      if (baseSituation === "vs-co-or") return "vs-co-or-2-3";
+      return baseSituation + "-2"; // utg, hj
+    }
+    if (stack === "20") return baseSituation + "-2";
+    if (stack === "30") return baseSituation + "-2-1";
+    if (stack === "50") return baseSituation + "-2-3";
+  }
+
+  if (baseSituation === "vs-bb-3b") {
+    if (stack === "20") {
+      if (pos === "BTN") return "vs-bb-3b-5";
+      if (pos === "SB") return "vs-bb-3b-6-5";
+      return "vs-bb-3b-6";
+    }
+    if (stack === "30") {
+      if (pos === "SB") return "vs-bb-3b-9";
+      return "vs-bb-3b-8-2";
+    }
+    if (stack === "50") {
+      if (pos === "SB") return "vs-bb-3b-9";
+      return "vs-bb-3b-9-8";
+    }
+    if (stack === "100") {
+      if (pos === "UTG") return "vs-bb-3b-12";
+      if (pos === "HJ") return "vs-bb-3b-12-3";
+      if (pos === "CO") return "vs-bb-3b-13-5";
+      if (pos === "BTN") return "vs-bb-3b-13";
+      if (pos === "SB") return "vs-bb-3b-10";
+    }
+  }
+
+  return baseSituation;
+};
+
 const ranks = ['A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2'];
 
 const all169Hands: string[] = [];
@@ -43,6 +95,8 @@ const formatSituation = (situation: string): string => {
   if (parts[2] === "or") formatted += "OpenRaise ";
   else if (parts[2] === "3b") formatted += "3Bet ";
   else if (parts[2] === "call") formatted += "Call ";
+  else if (parts[2] === "allin") formatted += "All-in ";
+
   if (parts.length >= 4) formatted += parts.slice(3).join('.') + "bb";
   else if (parts.length === 3 && !isNaN(Number(parts[2]))) formatted += parts[2] + "bb";
   else if (parts.length === 4 && !isNaN(Number(parts[3]))) formatted += parts[3] + "bb";
@@ -100,21 +154,29 @@ export default function UltimatePokerQuiz() {
         const myIdx = POSITIONS.indexOf(pos);
         const oppIdx = POSITIONS.indexOf(opponentPos);
 
-        if (situ.includes("3b")) {
-          if (situ === "vs-bb-3b-9-8" && pos !== "BB" && pos !== "SB") return true;
-          if (situ === "vs-bb-3b-9" && pos === "SB") return true;
-          return false;
+        if (situ === "vs-bb-3b") {
+          return pos !== "BB";
+        }
+        if (situ === "vs-sb-or") {
+          return pos === "BB" && stack !== "100";
+        }
+        if (situ === "vs-bb-or") {
+          return pos === "SB" && stack !== "100";
+        }
+        if (situ === "vs-bb-allin-20") {
+          return pos !== "BB" && stack === "20";
         }
         if (situ === "vs-sb-call-1") {
-          return pos === "BB";
+          return pos === "BB" && stack !== "100";
         }
-        if (situ.includes("-or-")) return oppIdx < myIdx;
+        if (situ.endsWith("-or")) return oppIdx < myIdx;
         return false;
       });
 
-      const situation = validSituations.length > 0
+      const baseSituation = validSituations.length > 0
         ? validSituations[Math.floor(Math.random() * validSituations.length)]
         : "open";
+      const situation = resolveSituation(baseSituation, stack, pos);
 
       setCurrentTask({ stack, pos, ante, situation, mode: "range", committed });
 
@@ -257,32 +319,27 @@ export default function UltimatePokerQuiz() {
         {/* メインカード */}
         <div className="glass rounded-[48px] p-8 max-w-[420px] mx-auto min-h-[550px] flex flex-col justify-between relative overflow-hidden">
           <div className="space-y-6">
-            <div>
-              <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest">HERO</p>
-              <p className="text-3xl font-black text-black leading-tight">{currentTask.pos}</p>
+            <div className="flex items-end">
+              <div className="w-[55%]">
+                <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest">HERO</p>
+                <p className="text-3xl font-black text-black leading-tight">{currentTask.pos}</p>
+              </div>
+              {mode === "range" ? (
+                <div>
+                  <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest">Stack</p>
+                  <p className="text-3xl font-black text-black leading-tight">{currentTask.stack}<span className="text-sm ml-1">BB</span></p>
+                </div>
+              ) : (
+                <div>
+                  <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest">Players</p>
+                  <p className="text-3xl font-black text-black leading-tight">{REMAINING_PLAYERS[currentTask.pos]} <span className="text-sm text-gray-500">left</span></p>
+                </div>
+              )}
             </div>
             <div>
               <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest">{mode === "range" ? "Situation" : ""}</p>
               <p className="text-3xl font-black text-black leading-tight">{mode === "range" ? formatSituation(currentTask.situation) : `M-VALUE: ${currentTask.mValue}`}</p>
             </div>
-
-            {mode === "range" ? (
-              <div className="grid grid-cols-2 gap-3">
-                <div className="glass-light rounded-2xl p-4">
-                  <p className="text-[9px] text-gray-600 font-black uppercase tracking-tighter">Stack</p>
-                  <p className="text-2xl font-black text-black">{currentTask.stack}<span className="text-xs ml-1">BB</span></p>
-                </div>
-                <div className="glass-light rounded-2xl p-4">
-                  <p className="text-[9px] text-gray-600 font-black uppercase tracking-tighter">Committed</p>
-                  <p className={`text-2xl font-black ${currentTask.committed > 0 ? 'text-orange-600' : 'text-gray-400'}`}>{currentTask.committed}<span className="text-xs ml-1">BB</span></p>
-                </div>
-              </div>
-            ) : (
-              <div className="glass-light rounded-2xl p-6 text-center">
-                <p className="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-1">Players To Act</p>
-                <p className="text-3xl font-black text-black">{REMAINING_PLAYERS[currentTask.pos]} <span className="text-sm text-gray-500">left</span></p>
-              </div>
-            )}
 
             <div className="relative py-12 glass-light rounded-[40px] flex items-center justify-center min-h-[180px]">
               {loading ? (
@@ -372,3 +429,5 @@ export default function UltimatePokerQuiz() {
     </div>
   );
 }
+
+

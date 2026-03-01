@@ -1,0 +1,1055 @@
+{
+    "hands": {
+        "22": {
+            "correct": [
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "33": {
+            "correct": [
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "44": {
+            "correct": [
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "55": {
+            "correct": [
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "66": {
+            "correct": [
+                "All-in",
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "77": {
+            "correct": [
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "88": {
+            "correct": [
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "99": {
+            "correct": [
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AA": {
+            "correct": [
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AKs": {
+            "correct": [
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AQs": {
+            "correct": [
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AJs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "ATs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A9s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A8s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A7s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A6s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A5s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A4s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A3s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A2s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AKo": {
+            "correct": [
+                "All-in",
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KK": {
+            "correct": [
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KQs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KJs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KTs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K9s": {
+            "correct": [
+                "Call",
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K8s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K7s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K6s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K5s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K4s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K3s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K2s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AQo": {
+            "correct": [
+                "All-in",
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KQo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "QQ": {
+            "correct": [
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "QJs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "QTs": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q9s": {
+            "correct": [
+                "Call",
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q8s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q7s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q6s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q5s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q4s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q3s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q2s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "AJo": {
+            "correct": [
+                "All-in",
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KJo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "QJo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "JJ": {
+            "correct": [
+                "Raise",
+                "All-in"
+            ],
+            "logic": "Manual Selection"
+        },
+        "JTs": {
+            "correct": [
+                "All-in",
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J9s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J8s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J7s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J6s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J5s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J4s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J3s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J2s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "ATo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "KTo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "QTo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "JTo": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "TT": {
+            "correct": [
+                "All-in",
+                "Raise"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T9s": {
+            "correct": [
+                "All-in",
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T8s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T7s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T6s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T5s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T4s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T3s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T2s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A9o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K9o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q9o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J9o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T9o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "98s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "97s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "96s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "95s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "94s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "93s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "92s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A8o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K8o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q8o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J8o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T8o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "98o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "87s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "86s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "85s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "84s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "83s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "82s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A7o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K7o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q7o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J7o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T7o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "97o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "87o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "76s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "75s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "74s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "73s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "72s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A6o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K6o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q6o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J6o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T6o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "96o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "86o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "76o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "65s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "64s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "63s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "62s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A5o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K5o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q5o": {
+            "correct": [
+                "Raise",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J5o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T5o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "95o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "85o": {
+            "correct": [
+                "Call",
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "75o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "65o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "54s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "53s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "52s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A4o": {
+            "correct": [
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K4o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q4o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J4o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T4o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "94o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "84o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "74o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "64o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "54o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "43s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "42s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A3o": {
+            "correct": [
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K3o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q3o": {
+            "correct": [
+                "Call",
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J3o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T3o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "93o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "83o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "73o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "63o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "53o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "43o": {
+            "correct": [
+                "Call",
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "32s": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "A2o": {
+            "correct": [
+                "Raise",
+                "All-in",
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "K2o": {
+            "correct": [
+                "Call"
+            ],
+            "logic": "Manual Selection"
+        },
+        "Q2o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "J2o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "T2o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "92o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "82o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "72o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "62o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "52o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "42o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        },
+        "32o": {
+            "correct": [
+                "Fold"
+            ],
+            "logic": "Manual Selection"
+        }
+    }
+}
